@@ -22,9 +22,9 @@ setup(
     description="Cockroach is your primitive & immortal swiss army knife",
     include_package_data=True,
     install_requires=[
-        "click==7.0",
-        "cryptography>=2.1",
-        "pefile>=2019.4.18, <2019.5.0",
+        "click>=8.1.2",
+        "cryptography>=36.0.2",
+        "pefile>=2021.9.3",
         "pycrypto"
     ],
     extras_require={
