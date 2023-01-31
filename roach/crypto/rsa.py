@@ -5,7 +5,7 @@
 from builtins import int
 import io
 
-from Crypto.PublicKey.RSA import RSAImplementation
+from Crypto.PublicKey import RSA as RSA_
 
 from roach.crypto.winhdr import BLOBHEADER, BaseBlob
 from roach.string.bin import uint32, bigint
@@ -118,4 +118,3 @@ class RSA(object):
         tup = wrap(n), wrap(e), wrap(d), wrap(p), wrap(q), wrap(crt)
         return RSA_.construct(tup).exportKey()
 
-RSA_ = RSAImplementation(use_fast_math=False)

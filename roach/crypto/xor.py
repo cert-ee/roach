@@ -3,7 +3,7 @@
 # See the file 'docs/LICENSE.txt' for copying permission.
 
 from builtins import int, bytes
-from Crypto.Cipher import XOR
+from Crypto.Util.strxor import strxor
 
 def xor(key, data):
     if not isinstance(data, bytes):
@@ -22,4 +22,4 @@ def xor(key, data):
     if isinstance(data, str):
         data = bytes(data)
 
-    return XOR.new(key).decrypt(data)
+    return strxor(key, data)

@@ -25,7 +25,7 @@ setup(
         "click>=8.1.2",
         "cryptography>=36.0.2",
         "pefile>=2021.9.3",
-        "pycrypto"
+        "pycryptodome"
     ],
     extras_require={
         ":sys_platform == 'win32'": [
