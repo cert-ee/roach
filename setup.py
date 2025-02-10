@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     name="roach",
-    version="1.0",
+    version="1.1",
     author="Jurriaan Bremer",
     author_email="jbr@cuckoo.sh",
     packages=[
@@ -23,7 +23,7 @@ setup(
     include_package_data=True,
     install_requires=[
         "click>=8.1.2",
-        "cryptography>=36.0.2",
+        "cryptography>=43.0.1",
         "pefile>=2021.9.3",
         "pycryptodome"
     ],
@@ -38,12 +38,12 @@ setup(
             "capstone==3.0.5",
         ],
         ":sys_platform == 'linux'": [
-            "capstone==3.0.5",
+            "capstone==5.0.5",
         ],
         "dev": [
             "pytest==4.4.1",
             "mock==2.0.0",
-            "capstone==3.0.5",
+            "capstone==5.0.5",
         ]
     },
 )
